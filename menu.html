@@ -3,53 +3,141 @@
     <head>
         <title>Menu - The ParaDoX</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     </head>
     <body>
         <div class="menu-hero">
-            <div class="navbar">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="menu.html">MENU</a>
-                <a href="contact.html">CONTACT</a>
-            </div>
-            <div class="menu-container">
-                <div class="menu-title">
-                    <h1>Our Menu</h1>
-                    <h3>Delicious Dishes Await</h3>
-                    <p>Explore our diverse menu filled with mouth-watering options to satisfy every craving.</p>
+            <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    </ul>
                 </div>
-                <div class="menu-content">
-                    <div class="menu-item">
-                        <h2>Starters</h2>
-                        <ul>
-                            <li>Bruschetta - Grilled bread topped with fresh tomatoes, garlic, and basil.</li>
-                            <li>Stuffed Mushrooms - Mushrooms filled with cheese and herbs, baked to perfection.</li>
-                            <li>Garlic Bread - Crispy bread topped with garlic butter and herbs.</li>
-                        </ul>
+            </nav>
+            <div class="menu-title">
+                <h1>Our Menu</h1>
+                <h3>Delicious Dishes Await</h3>
+                <p>Explore our diverse menu filled with mouth-watering options to satisfy every craving.</p>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="menu-content">
+                <div class="menu-section">
+                    <h2>Starters</h2>
+                </div>
+                <div class="menu-section-content">
+                    <div class="card" style="width: 18rem;">
+                        <img src="bruschetta.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bruschetta</h5>
+                            <p class="card-text">Grilled bread topped with fresh tomatoes, garlic, and basil.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <h2>Main Courses</h2>
-                        <ul>
-                            <li>Grilled Salmon - Fresh salmon fillet grilled and served with seasonal vegetables.</li>
-                            <li>Ribeye Steak - Juicy ribeye steak cooked to your liking, served with fries and salad.</li>
-                            <li>Vegetarian Pasta - Penne pasta tossed in a rich tomato sauce with fresh vegetables.</li>
-                        </ul>
+                    <div class="card" style="width: 18rem;">
+                        <img src="stuffed-mushrooms.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Stuffed Mushrooms</h5>
+                            <p class="card-text">Mushrooms filled with cheese and herbs, baked to perfection.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <h2>Desserts</h2>
-                        <ul>
-                            <li>Tiramisu - Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</li>
-                            <li>Chocolate Lava Cake - Warm chocolate cake with a gooey center, served with vanilla ice cream.</li>
-                            <li>Cheesecake - Creamy cheesecake topped with fresh berries.</li>
-                        </ul>
+                    <div class="card" style="width: 18rem;">
+                        <img src="garlic-bread.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Garlic Bread</h5>
+                            <p class="card-text">Crispy bread topped with garlic butter and herbs.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <h2>Beverages</h2>
-                        <ul>
-                            <li>Freshly Brewed Coffee - Rich and aromatic coffee made from premium beans.</li>
-                            <li>Herbal Teas - A selection of soothing herbal teas to relax and unwind.</li>
-                            <li>Soft Drinks - Variety of sodas and juices to quench your thirst.</li>
-                        </ul>
+                </div>
+                <div class="menu-section">
+                    <h2>Main Courses</h2>
+                </div>
+                <div class="menu-section-content">
+                    <div class="card" style="width: 18rem;">
+                        <img src="bruschetta.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Grilled Salmon</h5>
+                            <p class="card-text">Fresh salmon fillet grilled and served with seasonal vegetables.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="stuffed-mushrooms.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ribeye Steak</h5>
+                            <p class="card-text">Juicy ribeye steak cooked to your liking, served with fries and salad.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="garlic-bread.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vegetarian Pasta</h5>
+                            <p class="card-text">Penne pasta tossed in a rich tomato sauce with fresh vegetables.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-section">
+                    <h2>Desserts</h2>
+                </div>
+                <div class="menu-section-content">
+                    <div class="card" style="width: 18rem;">
+                        <img src="tiramisu.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tiramisu</h5>
+                            <p class="card-text">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="chocolate-lava-cake.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Lava Cake</h5>
+                            <p class="card-text">Warm chocolate cake with a gooey center, served with vanilla ice cream.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="cheesecake.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cheesecake</h5>
+                            <p class="card-text">Creamy cheesecake topped with fresh berries.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-section">
+                    <h2>Beverages</h2>
+                </div>
+                <div class="menu-section-content">
+                    <div class="card" style="width: 18rem;">
+                        <img src="freshly-brewed-coffee.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Freshly Brewed Coffee</h5>
+                            <p class="card-text">Rich and aromatic coffee made from premium beans.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="herbal-tea.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Herbal Teas</h5>
+                            <p class="card-text">Grilled bread topped with fresh tomatoes, garlic, and basil.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="soft-drinks.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Soft Drinks</h5>
+                            <p class="card-text">Variety of sodas and juices to quench your thirst.</p>
+                            <a href="#" class="btn btn-primary">Add to Cart + $5</a>
+                        </div>
                     </div>
                 </div>
             </div>
