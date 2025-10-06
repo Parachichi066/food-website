@@ -54,9 +54,16 @@
     background: none;
 }
 
-.home-button-container button:hover {
+.home-button-container button{
+    border: 0px !important;
+    background-color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.home-button-container button:hover{
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
+    border: 1px solid var(--primary-color) !important;
 }
 
 .contact-hero{
@@ -137,6 +144,7 @@
 }
 
 .contact-form button{
+    margin: 0px 99px;
     border: 0px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -146,8 +154,15 @@
     cursor: pointer;
     padding: 7px;
 }
+
+.contact-form button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
 .map{
-    float: right;
+    float: left;
     padding: 30px 30px;
 }
 
