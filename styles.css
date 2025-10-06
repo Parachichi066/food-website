@@ -1,6 +1,12 @@
+:root{
+    --primary-color: #d3b079;
+    --secondary-color: #342f28;
+    --text-color: #fff4e2;
+}
+
 *{
-    background-color: #282C34;
-    color: #FDF8F0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     margin: 0;
 }
 
@@ -8,10 +14,10 @@
     width: 100%;
     height: 100vh;
     background-image: url(hero_section_image.jpg);
+    
 }
 
 .navbar{
-    position:absolute;
     text-align: right;
     width: 100%;
     background: none;
@@ -45,13 +51,94 @@
     background: none;
 }
 
+.contact-hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(contact_hero_image.jpg);
+}
+
+.contact-container{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.contact-title{
+    text-align: center;
+}
+
+.contact-title h1{
+    font-size: 50px;
+}
+
+.contact-title h3{
+    font-size: 20px;
+}
+
+.email-phone a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.email-phone{
+    margin: 5px;
+}
+
 .container button{
     border: 0px;
-    background-color: #6B7F61;
+    background-color: var(--secondary-color);
     border-radius: 5px;
-    box-shadow: 0 0 1px;;
+    box-shadow: 0 0 1px;
     font-size: 20px;
     cursor: pointer;
     padding: 7px;
     margin: 10px;
+}
+
+.contact-container{
+    padding-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.contact-content{
+    overflow: hidden;
+}
+
+.contact-form{
+    padding-top: 30px;
+    padding-left: 50px;
+    float: left;
+    width: 360px;
+    padding-bottom: 30px;
+}
+
+.contact-form input, .contact-form textarea{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+}
+
+.contact-form button{
+    border: 0px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 1px;;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 7px;
+}
+.map{
+    float: right;
+    padding: 30px 30px;
 }
