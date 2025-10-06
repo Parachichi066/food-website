@@ -1,7 +1,7 @@
 :root{
     --primary-color: #d3b079;
     --secondary-color: #342f28;
-    --text-color: #fff4e2;
+    --text-color: #ffebca;
 }
 
 *{
@@ -219,4 +219,74 @@
     background-color: var(--secondary-color) !important;
     color: var(--primary-color) !important;
     border: 1px solid var(--primary-color) !important;
+}
+
+.reservation-hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(reservation.jpg);
+}
+
+.reservation-container{
+    background-color: var(--secondary-color);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.reservation-title{
+    text-align: center;
+}
+
+.reservation-title h1{
+    font-size: 70px;
+}
+
+.reservation-form{
+    padding: 10px 140px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.reservation-form input, .reservation-form textarea, .reservation-form select{
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+}
+
+.reservation-form input:focus, .reservation-form textarea:focus, .reservation-form select:focus{
+    color: var(--secondary-color)
+}
+
+.reservation-form-button{
+    margin: 0px 135px;
+    border: 0px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 1px;;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.reservation-form-button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color) !important;
+}
+
+input{
+    color: var(--secondary-color) !important;
+}
+
+.datetime{
+    display: flex;
+    gap: 10px;
 }

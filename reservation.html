@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Reserve a Table - The ParaDoX</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="reservation-hero">
+            <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reservation.html">RESERVATION</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="reservation-title">
+                <h1>Reserve a Table</h1>
+                <h3>Book Your Spot Today</h3>
+                <p>Ensure your table is ready for you by making a reservation in advance.</p>
+            </div>
+            <div class="reservation-content">
+                <form action="#" method="post" class="reservation-form">
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <br>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    <br>
+                    <div class="datetime">
+                        <input type="text" id="date" name="date" onfocus="(this.type='date')" placeholder="Select Date" required>
+                        <input type="text" id="time" name="time" onfocus="(this.type='time')" placeholder="Select Time" required>
+                    </div>
+                    <input type="number" id="guests" name="guests" placeholder="Number of Guests" min="1" max="20" required>
+                    <br>
+                    <button type="submit" class="reservation-form-button">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
