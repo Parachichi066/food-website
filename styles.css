@@ -104,8 +104,13 @@
 }
 
 .email-phone a{
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
     text-decoration: none;
+}
+
+.email-phone a:hover{
+    text-decoration: underline;
+    color: var(--text-color) !important;
 }
 
 .email-phone{
@@ -147,7 +152,7 @@
     margin: 0px 99px;
     border: 0px;
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--secondary-color) !important;
     border-radius: 5px;
     box-shadow: 0 0 1px;;
     font-size: 15px;
@@ -209,10 +214,14 @@
     color: var(--secondary-color) !important;
 }
 
+.card-img-top{
+    height: 200px !important;
+}
+
 .btn{
     border: 0px !important;
     background-color: var(--primary-color) !important;
-    color: var(--secondary-color);
+    color: var(--secondary-color) !important;
 }
 
 .btn:hover{
