@@ -9,7 +9,7 @@
 }
 
 body{ 
-    background: none;
+    background: var(--secondary-color) !important;
     color: var(--text-color) !important;
 }
 
@@ -22,7 +22,7 @@ body{
 .navbar{
     padding-top: 20px !important;
     font-size: 20px !important;
-    padding-right: 50px !important;
+    padding-right: 20px !important;
 }
 
 .navbar a{
@@ -82,13 +82,19 @@ body{
     border: 0px !important;
     background-color: var(--secondary-color) !important;
     color: var(--primary-color) !important;
+    border-radius: 5px;
+    box-shadow: 0 0 1px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 7px;
+    margin: 10px;
 }
 
 .home-button-container button:hover{
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
     border: 1px solid var(--primary-color) !important;
-}
+}    
 
 .contact-hero{
     width: 100%;
@@ -114,17 +120,6 @@ body{
 
 .contact-title h3{
     font-size: 20px;
-}
-
-.home-button-container button{
-    border: 0px;
-    background-color: var(--secondary-color);
-    border-radius: 5px;
-    box-shadow: 0 0 1px;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 7px;
-    margin: 10px;
 }
 
 .email-phone a{
@@ -153,11 +148,9 @@ body{
 }
 
 .contact-form{
-    padding-top: 30px;
-    padding-left: 50px;
+    padding: 30px 50px;
     float: left;
-    width: 360px;
-    padding-bottom: 30px;
+    width: 50%;
 }
 
 .contact-form input, .contact-form textarea{
@@ -173,7 +166,7 @@ body{
 }
 
 .contact-form button{
-    margin: 0px 99px;
+    margin: 0px 0px 10px 28%;
     border: 0px;
     background-color: var(--primary-color);
     color: var(--secondary-color) !important;
@@ -182,6 +175,7 @@ body{
     font-size: 15px;
     cursor: pointer;
     padding: 7px;
+    width: 44%;
 }
 
 .contact-form button:hover{
@@ -193,6 +187,11 @@ body{
 .map{
     float: left;
     padding: 30px 30px;
+    width: 50%;
+}
+
+iframe{
+    width: 100%;
 }
 
 .menu-hero{
@@ -214,9 +213,10 @@ body{
 
 .menu-container{
     background-color: var(--secondary-color);
-    margin: 20px 50px;
+    margin: 20px 10%;
     padding: 20px 0px;
     border-radius: 15px;
+    border:#d3b079 2px solid !important;
 }
 
 .menu-section{
@@ -224,6 +224,7 @@ body{
     padding: 20px 0px;
     background: none;
     margin-top: 30px;
+    color: var(--primary-color) !important;
 }
 
 .menu-section-content{
@@ -234,12 +235,21 @@ body{
     background: none;
 }
 
+.card{
+    border: 1px solid var(--primary-color) !important;
+}
+
 .card-title, .card-text{
-    color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
 }
 
 .card-img-top{
     height: 200px !important;
+}
+
+.card-body{
+    background-color: var(--secondary-color) !important;
+    border-radius: 0px 0px 5px 5px !important;
 }
 
 .btn{
@@ -299,7 +309,7 @@ body{
 }
 
 .reservation-form-button{
-    margin: 0px 135px;
+    margin: 0px 0px 10px 30%;
     border: 0px;
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -308,6 +318,7 @@ body{
     font-size: 15px;
     cursor: pointer;
     padding: 7px;
+    width: 40%;
 }
 
 .reservation-form-button:hover{
@@ -332,23 +343,38 @@ input{
     .navbar-collapse a{
         margin-left: 250px !important;
         margin-right: 5px !important;
-        padding-right: 5px !important
+        padding-right: 10px !important
 
     }
 
+    .contact-hero{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(contact-hero-image-mobile.jpg);
+        height: 180vh;
+    }
+
+    .contact-title{
+        padding: 0px 10% 10px;
+    }
+    
     .contact-form, .map{
         float: none;
         width: 100%;
-        padding-left: 0px;
+        padding: 0px 20px;
+    }
+
+    iframe{
+        margin-bottom: 10px;
+        width: 100% !important;
+    }
+
+    .reservation-hero{
+        height: 150vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(reservation.jpg);
     }
 
     .reservation-form{
         margin-left: 10px;
         margin-right: 10px;
         padding: 10px;
-    }
-
-    .datetime{
-        flex-direction: column;
     }
 }
