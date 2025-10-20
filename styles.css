@@ -96,6 +96,10 @@ body{
     border: 1px solid var(--primary-color) !important;
 }    
 
+.about-us{
+    padding: 50px 50px;
+    text-align: center;
+}
 
 .menu-hero{
     width: 100%;
