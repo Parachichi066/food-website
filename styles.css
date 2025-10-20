@@ -32,8 +32,8 @@ body{
 }
 
 .navbar a:hover {
-    background-color: var(--primary-color) !important;
-    color: var(--secondary-color) !important;
+    background-color: var(--secondary-color) !important;
+    border: 1px solid var(--primary-color) !important;
 }
 
 .navbar-toggler{
@@ -95,6 +95,77 @@ body{
     color: var(--secondary-color) !important;
     border: 1px solid var(--primary-color) !important;
 }    
+
+
+.menu-hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(menu-image.jpg);
+}
+
+.menu-title{
+    text-align: center;
+    padding-top: 150px;
+    background: none;
+}
+
+.menu-title h1{
+    font-size: 70px;
+    background: none;
+}
+
+.menu-container{
+    background-color: var(--secondary-color);
+    margin: 20px 10%;
+    padding: 20px 0px;
+    border-radius: 15px;
+    border:#d3b079 1px solid !important;
+}
+
+.menu-section{
+    text-align: center;
+    padding: 20px 0px;
+    background: none;
+    margin-top: 30px;
+    color: var(--primary-color) !important;
+}
+
+.menu-section-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    background: none;
+}
+
+.card{
+    border: 1px solid var(--primary-color) !important;
+}
+
+.card-title, .card-text{
+    color: var(--primary-color) !important;
+}
+
+.card-img-top{
+    height: 200px !important;
+}
+
+.card-body{
+    background-color: var(--secondary-color) !important;
+    border-radius: 0px 0px 5px 5px !important;
+}
+
+.btn{
+    border: 0px !important;
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+}
+
+.btn:hover{
+    background-color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+}
 
 .contact-hero{
     width: 100%;
@@ -192,76 +263,6 @@ body{
 
 iframe{
     width: 100%;
-}
-
-.menu-hero{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(menu-image.jpg);
-}
-
-.menu-title{
-    text-align: center;
-    padding-top: 150px;
-    background: none;
-}
-
-.menu-title h1{
-    font-size: 70px;
-    background: none;
-}
-
-.menu-container{
-    background-color: var(--secondary-color);
-    margin: 20px 10%;
-    padding: 20px 0px;
-    border-radius: 15px;
-    border:#d3b079 2px solid !important;
-}
-
-.menu-section{
-    text-align: center;
-    padding: 20px 0px;
-    background: none;
-    margin-top: 30px;
-    color: var(--primary-color) !important;
-}
-
-.menu-section-content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    background: none;
-}
-
-.card{
-    border: 1px solid var(--primary-color) !important;
-}
-
-.card-title, .card-text{
-    color: var(--primary-color) !important;
-}
-
-.card-img-top{
-    height: 200px !important;
-}
-
-.card-body{
-    background-color: var(--secondary-color) !important;
-    border-radius: 0px 0px 5px 5px !important;
-}
-
-.btn{
-    border: 0px !important;
-    background-color: var(--primary-color) !important;
-    color: var(--secondary-color) !important;
-}
-
-.btn:hover{
-    background-color: var(--secondary-color) !important;
-    color: var(--primary-color) !important;
-    border: 1px solid var(--primary-color) !important;
 }
 
 .reservation-hero{
@@ -376,5 +377,111 @@ input{
         margin-left: 10px;
         margin-right: 10px;
         padding: 10px;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    body{
+        background: var(--text-color) !important;
+    }
+    
+    .navbar a:hover {
+        background-color: var(--primary-color) !important;
+        color: var(--secondary-color) !important;
+    }
+
+    .home-button-container button{
+        background-color: var(--primary-color) !important;
+        color: var(--secondary-color) !important;
+    }
+
+    .home-button-container button:hover{
+        background-color: var(--secondary-color) !important;
+        color: var(--primary-color) !important;
+        border: 1px solid var(--primary-color) !important;
+    }
+    
+    .menu-container{
+        background-color: var(--primary-color) !important;
+        border: 0px !important;
+    }
+
+    .menu-section{
+        color: var(--secondary-color) !important;
+    }
+       
+    .card{
+        border: 1px solid var(--primary-color) !important;
+    }
+
+    .card-title, .card-text{
+        color: var(--secondary-color) !important;
+    }
+
+    .card-body{
+        background-color: var(--text-color) !important;
+    }
+
+    .btn{
+        border: 0px !important;
+        background-color: var(--primary-color) !important;
+        color: var(--secondary-color) !important;
+    }
+
+    .btn:hover{
+        background-color: var(--secondary-color) !important;
+        color: var(--primary-color) !important;
+        border: 1px solid var(--primary-color) !important;
+    }
+
+    .contact-container{
+        background-color: var(--primary-color) !important;
+    }
+
+    .contact-title{
+        color: var(--secondary-color) !important;
+    }
+
+    .email-phone a{
+        color:  var(--text-color) !important;
+    }
+
+    .email-phone a:hover{
+        color: var(--secondary-color) !important;
+    }
+
+    .contact-form input, .contact-form textarea{
+        background-color: var(--text-color);
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+    }
+
+    .contact-form button{
+        background-color: var(--text-color) !important;
+        color: var(--secondary-color) !important;
+        border: 1px solid var(--secondary-color) !important;
+    }
+
+    .contact-form button:hover{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    .reservation-hero{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(reservation.jpg);
+    }
+
+    .reservation-title{
+        color: var(--text-color) !important;
+    }
+
+    .reservation-form-button{
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+    .reservation-form-button:hover{
+        background-color: var(--secondary-color);
+        color: var(--primary-color) !important;
     }
 }
