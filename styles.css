@@ -14,14 +14,14 @@ body{
 }
 
 .hero{
-    width: 100%;
     height: 100vh;
-    background-image: url(hero-section-image.jpg);
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(hero-section-image.jpg);
 }
 
 .navbar{
     padding-top: 20px !important;
-    font-size: 20px !important;
+    font-size: 1.5rem !important;
     padding-right: 20px !important;
 }
 
@@ -55,11 +55,11 @@ body{
     text-align: right;
 }
 
-
 .title{
     text-align: center;
-    padding-top: 150px;
+    padding-top: 10%;
     background: none;
+    word-wrap: break-word;
 }
 
 .title h1{
@@ -78,7 +78,7 @@ body{
     background: none;
 }
 
-.home-button-container button{
+.home-button-container .btn{
     border: 0px !important;
     background-color: var(--secondary-color) !important;
     color: var(--primary-color) !important;
@@ -90,7 +90,7 @@ body{
     margin: 10px;
 }
 
-.home-button-container button:hover{
+.home-button-container .btn:hover{
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
     border: 1px solid var(--primary-color) !important;
@@ -239,7 +239,7 @@ body{
 }
 
 .contact-form{
-    padding: 30px 50px;
+    padding: 30px 50px 0px;
     float: left;
     width: 50%;
 }
@@ -273,6 +273,11 @@ body{
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+}
+
+.confirmation-message{
+    text-align: center;
+    color: green;
 }
 
 .map{
@@ -356,16 +361,11 @@ input{
     gap: 10px;
 }
 
-@media (max-width: 992px){
-    .hero{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(hero-section-image.jpg);
-    }
-
+@media (max-width: 991px){
     .navbar-collapse a{
-        margin-left: 250px !important;
         margin-right: 5px !important;
-        padding-right: 10px !important
-
+        padding-right: 10px !important;
+        margin-left: 300px !important;
     }
 
     .contact-hero{

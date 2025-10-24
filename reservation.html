@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Reserve a Table - The ParaDoX</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
@@ -30,20 +31,20 @@
                 <p>Ensure your table is ready for you by making a reservation in advance.</p>
             </div>
             <div class="reservation-content">
-                <form action="#" method="post" class="reservation-form">
-                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <form action="#" method="post" class="reservation-form" id="reservation-form">
+                    <input type="text" id="name" name="name" placeholder="Full Name" aria-label="full name" required>
                     <br>
-                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <input type="email" id="email" name="email" placeholder="Email Address" aria-label="email" required>
                     <br>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" aria-label="phone number" required>
                     <br>
                     <div class="datetime">
-                        <input type="text" id="date" name="date" onfocus="(this.type='date')" placeholder="Select Date" required>
-                        <input type="text" id="time" name="time" onfocus="(this.type='time')" placeholder="Select Time" required>
+                        <input type="text" id="date" name="date" onfocus="(this.type='date')" placeholder="Select Date" aria-label="date" required>
+                        <input type="text" id="time" name="time" onfocus="(this.type='time')" placeholder="Select Time" aria-label="time" required>
                     </div>
-                    <input type="number" id="guests" name="guests" placeholder="Number of Guests" min="1" max="20" required>
+                    <input type="number" id="guests" name="guests" placeholder="Number of Guests" min="1" max="20" aria-label="number of guests" required>
                     <br>
-                    <button type="submit" class="reservation-form-button">Book Now</button>
+                    <button type="submit" class="reservation-form-button" aria-label="submit reservation booking">Book Now</button>
                 </form>
             </div>
         </div>
