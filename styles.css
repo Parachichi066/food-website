@@ -133,7 +133,7 @@ body{ /* Set the website's background and text colours */
 }
 
 .menu-title h1{ /* Menu page title font size */
-    font-size: 8.375rem;
+    font-size: 4.375rem;
     background: none;
 }
 
@@ -362,19 +362,97 @@ iframe{ /* Map iframe styling; keeps the iframe normal across different sizes as
 /* ---------- Media query for responsiveness ---------- */
 
 @media (max-width: 991px){
-    .navbar-collapse a{ /* Navbar links margin adjustment for smaller screens; uses a different approach to keep items on the right */
+    .navbar-collapse a{ /* Navbar links margin/font size adjustment for smaller screens; uses a different approach to keep items on the right */
         margin-right: 5px !important;
         padding-right: 10px !important;
         margin-left: 300px !important;
+        font-size: 3rem !important;
+    }
+
+    .hero{ /* Hero section height adjustment for smaller screens */
+        height: 50vh;
+    }
+
+    .hero h1{ /* Hero section main title text resizing for smaller screens */
+        font-size: 8rem;
+    }
+
+    .hero h3{ /* Hero section subtitle text resizing for smaller screens */
+        font-size: 3rem;
+    }
+
+    .home-button-container .btn{ /* Home page buttons text resizing for smaller screens */
+        font-size: 3rem;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .about-us h1{ /* About Us section main title text resizing */
+        font-size: 5rem;
+    }
+
+    .about-us p{ /* About Us section text resizing */
+        font-size: 2rem;
+    }
+
+    .reviews h1{ /* Reviews section title text resizing for smaller screens */
+        font-size: 5rem;
+    }
+
+    .review-card p{ /* Review card text resizing */
+        font-size: 2rem;
+    }
+
+    footer{ /* Footer text resizing */
+        font-size: 1.5rem;
+    }
+
+    .menu-hero{ /* Menu page hero section height adjustment */
+        height: 900px;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(menu-image-mobile.jpg);
+
+    }
+
+    .menu-title h3{ /* Menu page subtitle text resizing */
+        font-size: 3rem;
+    }
+
+    .menu-title p{ /* Menu page description text resizing */
+        font-size: 2rem;
+    }
+
+    .menu-section h2{ /* Menu section title text resizing */
+        font-size: 3rem;
+    }
+
+    .card-body h5{ /* Menu item/card title text resizing */
+        font-size: 2.5rem;
+    }
+
+    .card-body p{ /* Menu item/card description text resizing */
+        font-size: 1.8rem;
+    }
+
+    .card-body a{ /* Menu item price button text resizing */
+        font-size: 2rem;
     }
 
     .contact-hero{ /* Contact page hero section adjustment for smaller screens */
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(contact-hero-image-mobile.jpg);
-        height: 180vh;
+        height: 70vh;
     }
 
-    .contact-title{ /* Contact page title padding adjustment for smaller screens */
+    .contact-title{ /* Contact page title padding adjustment for smaller screens; form description text resizing */
         padding: 0px 10% 10px;
+        font-size: 1.8rem;
+    }
+
+    .contact-title h1{ /* Contact page main title resizing */
+        font-size: 5rem;
+    }
+
+    .contact-title h3{ /* Contact page subtitle resizing */
+        font-size: 2rem;
     }
     
     .contact-form, .map{ /* Ensures the contacts form container and map take full width on smaller screens */
@@ -387,15 +465,35 @@ iframe{ /* Map iframe styling; keeps the iframe normal across different sizes as
         margin-bottom: 10px;
     }
 
+    input::placeholder, textarea::placeholder{ /* Placeholder text resizing for smaller screens */
+        font-size: 1.8rem;
+    }
+
+    .contact-form button{ /* Contacts form submit button resizing */
+        font-size: 2rem;
+    }
+
     .reservation-hero{ /* Reservation page hero section adjustment for smaller screens */
-        height: 150vh;
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(reservation.jpg);
+        height: 80vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(reservation-mobile.jpg);
     }
 
     .reservation-form{ /* Reservation form margin adjustment for smaller screens */
         margin-left: 10px;
         margin-right: 10px;
         padding: 10px;
+    }
+
+    .reservation-title h3{ /* Reservation form main title resizing */
+        font-size: 2rem;
+    }
+
+    .reservation-title p{ /* Reservation form description text resizing */
+        font-size: 1.8rem;
+    }
+
+    .reservation-form button{ /* Reservation form submit button resizing */
+        font-size: 2rem;
     }
 }
 
