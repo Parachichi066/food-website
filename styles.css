@@ -1,84 +1,85 @@
-:root{
+/* All attributes marked with !important are to override Bootstrap's default styles */
+
+:root{ /* Define color variables for consistent colouring */
     --primary-color: #d3b079;
     --secondary-color: #342f28;
     --text-color: #ffebca;
 }
 
-*{
-    margin: 0;
-}
-
-body{ 
+body{ /* Set the website's background and text colours */
     background: var(--secondary-color) !important;
     color: var(--text-color) !important;
 }
 
-.hero{
+/* ---------- Home page styles ---------- */
+
+.hero{ /* Hero section that takes up the full viewport height with a background image and gradient overlay for better text contrast*/
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(hero-section-image.jpg);
 }
 
-.navbar{
+.navbar{ /* Navigation bar styling */
     padding-top: 20px !important;
     font-size: 1.5rem !important;
     padding-right: 20px !important;
 }
 
-.navbar a{
+.navbar a{ /* Navigation items/links styling */
     margin-right: 30px !important;
     border-radius: 5px;
     color: var(--text-color) !important;
 }
 
-.navbar a:hover {
+.navbar a:hover { /* Navigation items hover effect */
     background-color: var(--secondary-color) !important;
     border: 1px solid var(--primary-color) !important;
 }
 
-.navbar-toggler{
+.navbar-toggler{ /* Hamburger menu button styling for smaller screens */
     margin-left: auto;
     border: 0 !important;
     padding: .25rem .5rem;
 }
 
-.navbar-toggler-icon {
+.navbar-toggler-icon { /* Custom hamburger icon colouring to match website's colours 
+                        (the SVG is filled with the text colour) */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 235, 202, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active{
+.navbar-toggler:focus, .navbar-toggler:active{ /* Remove default focus/active outline and shadow */
     box-shadow: none !important;
     outline: none !important;
 }
 
-.navbar-collapse {
+.navbar-collapse { /* Align the collapsed navbar items to the right */
     text-align: right;
 }
 
-.title{
+.title{ /* Hero section title styling; text to wrap when screens are too small or magnified */
     text-align: center;
     padding-top: 10%;
     background: none;
     word-wrap: break-word;
 }
 
-.title h1{
-    font-size: 70px;
+.title h1{ /* Main title font size; removes background color applied on some CSS objects */
+    font-size: 4.375rem;
     background: none;
 }
 
-.title h3{
-    font-size: 30px;
+.title h3{ /* Subtitle font size */
+    font-size: 1.875rem;
     background: none;
 }
 
-.home-button-container{
+.home-button-container{ /* Container for the home page buttons */
     text-align: center;
     padding-top: 20px;
     background: none;
 }
 
-.home-button-container .btn{
+.home-button-container .btn{ /* Home page buttons styling */
     border: 0px !important;
     background-color: var(--secondary-color) !important;
     color: var(--primary-color) !important;
@@ -90,18 +91,18 @@ body{
     margin: 10px;
 }
 
-.home-button-container .btn:hover{
+.home-button-container .btn:hover{ /* Home page buttons hover styling */
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
     border: 1px solid var(--primary-color) !important;
 }    
 
-.about-us{
+.about-us{ /* About Us section styling */
     padding: 50px 50px;
     text-align: center;
 }
 
-.review-card{
+.review-card{ /* Customer review card styling; max width to prevent oversized cards in larger screens */
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
     max-width: 500px;
@@ -109,32 +110,34 @@ body{
     text-align: center;
 }
 
-.carousel-control-prev-icon {
+.carousel-control-prev-icon { /* Custom carousel previous button icon colouring; svg was filled with primary colour */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d3b079'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
 }
 
-.carousel-control-next-icon {
+.carousel-control-next-icon { /* Custom carousel next button icon colouring; */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d3b079'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 
-.menu-hero{
+/* ---------- Menu page styles ---------- */
+
+.menu-hero{ /* Menu page hero section styling with background image and gradient overlay */
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(menu-image.jpg);
 }
 
-.menu-title{
+.menu-title{ /* Menu page title styling */
     text-align: center;
     padding-top: 150px;
     background: none;
 }
 
-.menu-title h1{
-    font-size: 70px;
+.menu-title h1{ /* Menu page title font size */
+    font-size: 8.375rem;
     background: none;
 }
 
-.menu-container{
+.menu-container{ /* Container within which the menu will exist */
     background-color: var(--secondary-color);
     margin: 20px 10%;
     padding: 20px 0px;
@@ -142,7 +145,7 @@ body{
     border:#d3b079 1px solid !important;
 }
 
-.menu-section{
+.menu-section{ /* Menu section styling */
     text-align: center;
     padding: 20px 0px;
     background: none;
@@ -150,7 +153,7 @@ body{
     color: var(--primary-color) !important;
 }
 
-.menu-section-content{
+.menu-section-content{ /* Container for the menu items/cards; ensures items are centered and wrap in smaller screens */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -158,42 +161,45 @@ body{
     background: none;
 }
 
-.card{
+.menu-section-content .card{ /* Menu item/card styling */
     border: 1px solid var(--primary-color) !important;
+    width: 18rem !important;
 }
 
-.card-title, .card-text{
+.card-title, .card-text{ /*Menu item text styling */
     color: var(--primary-color) !important;
 }
 
-.card-img-top{
+.card-img-top{ /* Fixed height for menu item images */
     height: 200px !important;
 }
 
-.card-body{
+.card-body{ /* Menu card body styling */
     background-color: var(--secondary-color) !important;
     border-radius: 0px 0px 5px 5px !important;
 }
 
-.btn{
+.btn{ /* Menu item price button styling */
     border: 0px !important;
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
 }
 
-.btn:hover{
+.btn:hover{ /* Menu item price button hover styling */
     background-color: var(--secondary-color) !important;
     color: var(--primary-color) !important;
     border: 1px solid var(--primary-color) !important;
 }
 
-.contact-hero{
+/* ---------- Contact page styles ---------- */
+
+.contact-hero{ /* Contact page hero section styling with similar overlay means */
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(contact-hero-image.jpg);
 }
 
-.contact-container{
+.contact-container{ /* Contacts form main container styling */
     background-color: var(--secondary-color);
     margin-left: 50px;
     margin-right: 50px;
@@ -201,50 +207,56 @@ body{
     margin-top: 20px;
 }
 
-.contact-title{
+.contact-title{ /* Contacts form heading title styling */
     text-align: center;
 }
 
-.contact-title h1{
+.contact-title h1{ /* Contacts form main title font size */
     font-size: 50px;
 }
 
-.contact-title h3{
+.contact-title h3{ /* Contacts form subtitle font size */
     font-size: 20px;
 }
 
-.email-phone a{
+.email-phone a{ /* Email and phone link styling */
     color: var(--primary-color) !important;
     text-decoration: none;
 }
 
-.email-phone a:hover{
+.email-phone a:hover{ /* Email and phone link hover effect */
     text-decoration: underline;
     color: var(--text-color) !important;
 }
 
-.email-phone{
-    margin: 5px;
-}
-
-.contact-container{
+.contact-container{ /* Container for map and contacts form itself */
     margin-left: 15%;
     margin-right: 15%;
     border-radius: 15px;
     margin-top: 0px;
 }
 
-.contact-content{
-    overflow: hidden;
+.contact-content{ /* Creates a block formatting context (BFC) */
+    display: flow-root;
 }
 
-.contact-form{
+.map{ /* Map styling */
+    float: left;
+    padding: 30px 30px;
+    width: 50%;
+}
+
+iframe{ /* Map iframe styling; keeps the iframe normal across different sizes as opposed to defining a set width */
+    width: 100%;
+}
+
+.contact-form{ /* Contacts form styling */
     padding: 30px 50px 0px;
     float: left;
     width: 50%;
 }
 
-.contact-form input, .contact-form textarea{
+.contact-form input, .contact-form textarea{ /* Contacts form input fields and textarea styling */
     padding: 5px;
     width: 100%;
     margin-bottom: 18px;
@@ -256,7 +268,7 @@ body{
     color: var(--secondary-color);
 }
 
-.contact-form button{
+.contact-form button{ /* Contacts form submit button styling; width and margin percentages ensure the button stays relatively center across different screen sizes */
     margin: 0px 0px 10px 28%;
     border: 0px;
     background-color: var(--primary-color);
@@ -269,57 +281,47 @@ body{
     width: 44%;
 }
 
-.contact-form button:hover{
+.contact-form button:hover{ /* Contacts form submit button hover effect */
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
 
-.confirmation-message{
+.confirmation-message{ /* Confirmation/error message styling */
     text-align: center;
-    color: green;
 }
 
-.map{
-    float: left;
-    padding: 30px 30px;
-    width: 50%;
-}
+/* ---------- Reservation page styles ---------- */
 
-iframe{
-    width: 100%;
-}
-
-.reservation-hero{
+.reservation-hero{ /* Reservation page hero section with similar styling to other hero sections */
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(reservation.jpg);
 }
 
-.reservation-container{
+.reservation-container{ /* Reservation form main container styling */
     background-color: var(--secondary-color);
     margin-left: 50px;
     margin-right: 50px;
     padding-top: 20px;
     margin-top: 20px;
-    border-radius: 15px;
 }
 
-.reservation-title{
+.reservation-title{ /* Reservation form title styling */
     text-align: center;
 }
 
-.reservation-title h1{
+.reservation-title h1{ /* Reservation form heading font size */
     font-size: 70px;
 }
 
-.reservation-form{
+.reservation-form{ /* Reservation form styling; marins keep the form center */
     padding: 10px 140px;
     margin-left: 25%;
     margin-right: 25%;
 }
 
-.reservation-form input, .reservation-form textarea, .reservation-form select{
+.reservation-form input, .reservation-form textarea, .reservation-form select{ /* Reservation form input fields, textarea and select dropdown styling */
     padding: 5px;
     width: 100%;
     margin-bottom: 18px;
@@ -330,11 +332,11 @@ iframe{
     color: var(--secondary-color);
 }
 
-.reservation-form input:focus, .reservation-form textarea:focus, .reservation-form select:focus{
+.reservation-form input:focus, .reservation-form textarea:focus, .reservation-form select:focus{ /* Reservation form fields focus effect */
     color: var(--secondary-color)
 }
 
-.reservation-form-button{
+.reservation-form-button{ /* Reservation form submit button styling; margins and width follow similar styling idea to center it */
     margin: 0px 0px 10px 30%;
     border: 0px;
     background-color: var(--secondary-color);
@@ -347,176 +349,175 @@ iframe{
     width: 40%;
 }
 
-.reservation-form-button:hover{
+.reservation-form-button:hover{ /* Reservation form submit button hover effect */
     background-color: var(--primary-color);
     color: var(--secondary-color) !important;
 }
 
-input{
-    color: var(--secondary-color) !important;
-}
-
-.datetime{
+.datetime{ /* Container for date and time fields to stay in one line */
     display: flex;
     gap: 10px;
 }
 
+/* ---------- Media query for responsiveness ---------- */
+
 @media (max-width: 991px){
-    .navbar-collapse a{
+    .navbar-collapse a{ /* Navbar links margin adjustment for smaller screens; uses a different approach to keep items on the right */
         margin-right: 5px !important;
         padding-right: 10px !important;
         margin-left: 300px !important;
     }
 
-    .contact-hero{
+    .contact-hero{ /* Contact page hero section adjustment for smaller screens */
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(contact-hero-image-mobile.jpg);
         height: 180vh;
     }
 
-    .contact-title{
+    .contact-title{ /* Contact page title padding adjustment for smaller screens */
         padding: 0px 10% 10px;
     }
     
-    .contact-form, .map{
+    .contact-form, .map{ /* Ensures the contacts form container and map take full width on smaller screens */
         float: none;
         width: 100%;
         padding: 0px 20px;
     }
 
-    iframe{
+    iframe{ /* Map iframe margin adjustment for smaller screens */
         margin-bottom: 10px;
-        width: 100% !important;
     }
 
-    .reservation-hero{
+    .reservation-hero{ /* Reservation page hero section adjustment for smaller screens */
         height: 150vh;
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(reservation.jpg);
     }
 
-    .reservation-form{
+    .reservation-form{ /* Reservation form margin adjustment for smaller screens */
         margin-left: 10px;
         margin-right: 10px;
         padding: 10px;
     }
 }
 
+/* ---------- Media query for light mode preference ---------- */
+
 @media (prefers-color-scheme: light){
-    body{
+    body{ /* Light mode background colour adjustment */
         background: var(--text-color) !important;
     }
     
-    .navbar a:hover {
+    .navbar a:hover { /* Navbar links hover effect colouring for light mode */
         background-color: var(--primary-color) !important;
         color: var(--secondary-color) !important;
     }
 
-    .home-button-container button{
+    .home-button-container button{ /* Home page buttons colouring for light mode */
         background-color: var(--primary-color) !important;
         color: var(--secondary-color) !important;
     }
 
-    .home-button-container button:hover{
+    .home-button-container button:hover{ /* Home page buttons hover effect colouring for light mode */
         background-color: var(--secondary-color) !important;
         color: var(--primary-color) !important;
         border: 1px solid var(--primary-color) !important;
     }
 
-    .about-us{
+    .about-us{ /* About Us section colouring for light mode */
         color: var(--secondary-color) !important;
     }
 
-    .reviews h1{
+    .reviews h1{ /* Reviews section title colouring for light mode */
         color: var(--secondary-color) !important;
     }
 
-    .carousel-control-prev-icon {
+    .carousel-control-prev-icon { /* Carousel previous button icon colouring for light mode; fills svg with secondary colour */
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23342f28'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
     }
 
-    .carousel-control-next-icon {
+    .carousel-control-next-icon { /* Carousel next button icon colouring for light mode; fills svg with secondary colour */
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23342f28'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
     }
     
-    .menu-container{
+    .menu-container{ /* Menu container coloring adjustment for light mode; removes container border */
         background-color: var(--primary-color) !important;
         border: 0px !important;
     }
 
-    .menu-section{
+    .menu-section{ /* Menu section title colouring for light mode */
         color: var(--secondary-color) !important;
     }
        
-    .card{
+    .card{ /* Menu item/card colouring adjustment for light mode */
         border: 1px solid var(--primary-color) !important;
     }
 
-    .card-title, .card-text{
+    .card-title, .card-text{ /* Menu item text colouring for light mode */
         color: var(--secondary-color) !important;
     }
 
-    .card-body{
+    .card-body{ /* Menu item/card body colouring adjustment for light mode */
         background-color: var(--text-color) !important;
     }
 
-    .btn{
+    .btn{ /* Menu item price button colouring adjustment for light mode; also removes border */
         border: 0px !important;
         background-color: var(--primary-color) !important;
         color: var(--secondary-color) !important;
     }
 
-    .btn:hover{
+    .btn:hover{ /* Menu item price button hover effect colouring for light mode; adds border wth appropriate colouring */
         background-color: var(--secondary-color) !important;
         color: var(--primary-color) !important;
         border: 1px solid var(--primary-color) !important;
     }
 
-    .contact-container{
+    .contact-container{ /* Contacts form container colouring for light mode */
         background-color: var(--primary-color) !important;
     }
 
-    .contact-title{
+    .contact-title{ /* Contacts form title recolouring */
         color: var(--secondary-color) !important;
     }
 
-    .email-phone a{
+    .email-phone a{ /* Email and phone link recolouring */
         color:  var(--text-color) !important;
     }
 
-    .email-phone a:hover{
+    .email-phone a:hover{ /* Email and phone link hover effect recolouring */
         color: var(--secondary-color) !important;
     }
 
-    .contact-form input, .contact-form textarea{
+    .contact-form input, .contact-form textarea{ /* Contacts form input fields and textarea recolouring; adds coloured border */
         background-color: var(--text-color);
         color: var(--secondary-color);
         border: 1px solid var(--secondary-color);
     }
 
-    .contact-form button{
+    .contact-form button{ /* Contacts form submit button recolouring and border */
         background-color: var(--text-color) !important;
         color: var(--secondary-color) !important;
         border: 1px solid var(--secondary-color) !important;
     }
 
-    .contact-form button:hover{
+    .contact-form button:hover{ /* Contacts form submit button hover effect recolouring */
         background-color: var(--secondary-color);
         color: var(--primary-color);
     }
 
-    .reservation-hero{
+    .reservation-hero{ /* Reservation page hero section adjustment for light mode */
         background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(reservation.jpg);
     }
 
-    .reservation-title{
+    .reservation-title{ /* Reservation form title recolouring */
         color: var(--text-color) !important;
     }
 
-    .reservation-form-button{
+    .reservation-form-button{ /* Reservation form submit button recolouring */
         background-color: var(--primary-color);
         color: var(--secondary-color);
     }
 
-    .reservation-form-button:hover{
+    .reservation-form-button:hover{ /* Reservation form submit button hover effect recolouring */
         background-color: var(--secondary-color);
         color: var(--primary-color) !important;
     }

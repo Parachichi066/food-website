@@ -9,7 +9,7 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <!-- Bootstrap's JavaScript for interactive components (Carousel) -->
+        <!-- Bootstrap's JavaScript for interactive components (Carousel, navbar) -->
         <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
         <section class="hero">
             <!-- Bootstrap's responsive navigation bar -->
@@ -21,6 +21,7 @@
                     </button>
                     <!-- To make navigation bar items collapsible -->
                     <div class="collapse navbar-collapse" id="mainNav">
+                        <!-- Pushes navigation bar items to the right -->
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
                             <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
@@ -30,6 +31,7 @@
                     </div>
                 </div>
             </nav>
+            <!-- Restaurant name, slogan and main navigation buttons -->
             <div class="title">
                 <h1>The ParaDoX</h1>
                 <h3>~ Taste Greatness ~</h3>
@@ -40,28 +42,35 @@
             </div>
         </section>
 
+        <!-- About Us section -->
         <section class="about-us">
-            <div class="container">
+            <div class="container"> <!-- Uses responsive grid -->
                 <div class="row align-items-center">
+                    <!-- Text column followed by image column -->
                     <div class="col-lg-6 about-us-text">
                         <h1>About Us</h1>
                         <p>At The ParaDoX, we believe that dining is more than just a meal; it's an experience. Our culinary team is dedicated to crafting dishes that not only tantalize your taste buds but also tell a story. From locally sourced ingredients to innovative cooking techniques, every plate we serve is a testament to our passion for food and hospitality. Whether you're joining us for a casual lunch or a special celebration, we strive to create memorable moments for every guest.</p>
                     </div>
-                    <div class="col-12 col-lg-6 about-us-image">
+                    <div class="col-lg-6 about-us-image">
                         <img src="about-us.jpg" class="img-fluid rounded" alt="About Us">
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Reviews section using Bootstrap's Carousel -->
         <section class="reviews mb-5">
             <div class="container text-center">
                 <h1 class="mb-4">See our Reviews</h1>
             </div>
+            <!-- Carousel with auto-play every 6 seconds -->
             <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
                 <div class="carousel-inner">
+                    <!-- The first customer review, set to active by default -->
                     <div class="carousel-item active">
+                        <!-- Enables CSS flexbox and horizontally centers content in the carousel -->
                         <div class="d-flex justify-content-center">
+                            <!-- Padding and shadows around the review cards -->
                             <div class="review-card card p-4 shadow-sm">
                                 <p class="review-text">"Amazing food and friendly staff — will definitely come back!"</p>
                                 <div class="review-stars">★★★★★</div>
@@ -89,9 +98,10 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- Carousel navigation buttons -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev" aria-label="Previous review">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <!-- To ensure it is read out to screen readers though the tex does not appear on screen -->
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next" aria-label="Next review">
@@ -101,6 +111,7 @@
                 </div>
             </div>
         </section>
+        <!-- Footer -->
         <footer class="text-center py-4">
             <p>&copy; 2024 The ParaDoX. All rights reserved.</p>
         </footer>

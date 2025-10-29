@@ -25,6 +25,8 @@
                     </div>
                 </div>
             </nav>
+            <!-- Similar comments to homepage -->
+            <!-- Form Heading -->
             <div class="reservation-title">
                 <h1>Reserve a Table</h1>
                 <h3>Book Your Spot Today</h3>
@@ -32,22 +34,28 @@
             </div>
             <div class="reservation-content">
                 <form action="#" method="post" class="reservation-form" id="reservation-form">
+                    <!-- Form input fields with aria-labels for screen reader users -->
                     <input type="text" id="name" name="name" placeholder="Full Name" aria-label="full name" required>
                     <br>
                     <input type="email" id="email" name="email" placeholder="Email Address" aria-label="email" required>
                     <br>
                     <input type="tel" id="phone" name="phone" placeholder="Phone Number" aria-label="phone number" required>
                     <br>
+                    <!-- Additional formatting/styling of date and time input fields -->
                     <div class="datetime">
+                        <!-- onfocus to make user input date and time values even though the field is a text input field -->
                         <input type="text" id="date" name="date" onfocus="(this.type='date')" placeholder="Select Date" aria-label="date" required>
                         <input type="text" id="time" name="time" onfocus="(this.type='time')" placeholder="Select Time" aria-label="time" required>
                     </div>
                     <input type="number" id="guests" name="guests" placeholder="Number of Guests" min="1" max="20" aria-label="number of guests" required>
                     <br>
                     <button type="submit" class="reservation-form-button" aria-label="submit reservation booking">Book Now</button>
+                    <!-- Div where Confirmation/error message will display -->
+                    <div class="confirmation-message" id="confirmation"></div>
                 </form>
             </div>
         </div>
+        <!-- Footer -->
         <footer class="text-center py-4">
             <p>&copy; 2024 The ParaDoX. All rights reserved.</p>
         </footer>
